@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Main site -->
+    <url>
+        <loc>https://www.mileswaugh.com/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Projects -->
+    <url>
+        <loc>https://projects.mileswaugh.com/2D-Caustics/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://projects.mileswaugh.com/Baryon-Simulator/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://projects.mileswaugh.com/car-physics-simulator/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://projects.mileswaugh.com/chess-coordinate-trainer/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://projects.mileswaugh.com/password-generator/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://projects.mileswaugh.com/terminize/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://projects.mileswaugh.com/text-editor/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://projects.mileswaugh.com/Wavefunction-Simulator/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Blog main -->
+    <url>
+        <loc>https://blog.mileswaugh.com/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Blog posts -->
+    <url>
+        <loc>https://blog.mileswaugh.com/posts/infinite_tetration/</loc>
+        <changefreq>never</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://blog.mileswaugh.com/posts/complex_fractals_desmos/</loc>
+        <changefreq>never</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://blog.mileswaugh.com/posts/welcome/</loc>
+        <changefreq>never</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Blog structure -->
+    <url>
+        <loc>https://blog.mileswaugh.com/development/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Tags -->
+    <url>
+        <loc>https://blog.mileswaugh.com/tags/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://blog.mileswaugh.com/tags/general/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://blog.mileswaugh.com/tags/long/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://blog.mileswaugh.com/tags/math/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://blog.mileswaugh.com/tags/numerical-analysis/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://blog.mileswaugh.com/tags/short/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+</urlset>
