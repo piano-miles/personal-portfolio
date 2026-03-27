@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miles Waugh — Home</title>
+    <meta name="description"
+        content="Miles Waugh — computational physics researcher focused on scientific machine learning, simulation, and physically grounded AI methods." />
+    <link rel="canonical" href="https://www.mileswaugh.com/" />
+    <meta property="og:title" content="Miles Waugh — Computational Physics & ML" />
+    <meta property="og:description"
+        content="Research, projects, and visualizations in computational physics and machine learning." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.mileswaugh.com/" />
+    <meta property="og:image" content="https://www.mileswaugh.com/preview.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="site-header animate animate-top" id="top">
+        <div class="container nav-wrap"><a href="#top" class="logo">Miles Waugh</a><button class="menu-toggle"
+                id="menuToggle" aria-label="Toggle menu" aria-expanded="false"
+                aria-controls="siteNav"><span></span><span></span><span></span></button>
+            <nav class="site-nav" id="siteNav" aria-label="Main navigation"><a href="#research">Research</a><a
+                    href="#projects">Projects</a><a href="#writing">Writing</a><a href="#visuals">Visuals</a><a
+                    href="#links">Links</a><a href="#contact">Contact</a></nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero section">
+            <div class="container hero-content animate animate-left">
+                <div class="hero-text">
+                    <h1>Miles Waugh</h1>
+                    <h2 class="visually-hidden">Computational Physics Researcher and Machine Learning Engineer </h2>
+                    <p class="hero-role">Computational Physics & Scientific Machine Learning </p>
+                    <p class="hero-copy">I’m an undergraduate researcher in computational physics working on machine
+                        learning methods for physical systems. I focus on learning-based approaches to simulation and
+                        modeling in high-energy physics and quantum many-body systems. I also build <a
+                            href="#projects">interactive physics demos</a> and create visualizations. </p>
+                    <div class="hero-actions"><a href="#research" class="btn btn-primary">View research</a><a
+                            href="#contact" class="btn btn-secondary">Contact</a></div>
+                </div>
+                <div class="hero-image"><img src="media/profile.jpg" alt="Miles Waugh" /></div>
+            </div>
+        </section>
+        <section class="section animate animate-bottom" id="research">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">Research</p>
+                    <h2>Publications & Work</h2>
+                </div>
+                <div class="cards cards-vertical"><a href="https://arxiv.org/abs/2602.19484" class="card-link"
+                        target="_blank" rel="noopener noreferrer">
+                        <article class="card">
+                            <div class="card-image-wrapper"><img src="media/fno_mott_banner.webp"
+                                    alt="Spectral path tracer" /></div>
+                            <h3>Toward the Thermodynamic Limit: Neural Operators for Non-equilibrium Dynamics of Mott
+                                Insulators (Anandkumar Group)</h3>
+                            <p class="meta">2025 · Scientific Machine Learning · Preprint</p>
+                            <p>Developed a Fourier Neural Operator to model nonequilibrium dynamics in strongly
+                                correlated systems. Trained on small lattices, the model demonstrates zero-shot
+                                generalization to systems exceeding 1024×1024, producing physically consistent
+                                predictions far beyond the tractable regime of conventional solvers. </p>
+                        </article>
+                    </a>
+                    <article class="card">
+                        <h3>Transformer-based Jet Reconstruction for Dark Matter Signatures (ATLAS / CERN, Whiteson
+                            Group)</h3>
+                        <p class="meta">2024–2025 · High Energy Physics · Research</p>
+                        <p>Developed transformer-based models for reconstructing jet kinematics in simulated collider
+                            data. Investigated missing momentum signatures associated with dark matter production using
+                            a full simulation pipeline (MadGraph, Pythia8, Delphes) on GPU-enabled HPC systems. </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">Projects</p>
+                    <h2>Code & Implementations</h2>
+                </div>
+                <div class="project-group">
+                    <h3 class="group-title">Scientific Computing</h3>
+                    <div class="cards cards-3"><a href="https://projects.mileswaugh.com/Wavefunction-Simulator/"
+                            class="card-link" target="_blank" rel="noopener noreferrer">
+                            <article class="card">
+                                <div class="card-image-wrapper"><img src="media/wavefunction_simulator_thumb.webp"
+                                        alt="Wavefunction simulation" /></div>
+                                <h4>Wavefunction Simulator</h4>
+                                <p class="meta">JavaScript · Numerical Methods</p>
+                                <p>A real-time 1D solver for the time-dependent Schrödinger equation using a
+                                    fourth-order Runge–Kutta integrator, allowing users to specify arbitrary potentials
+                                    and simulate the resulting wavefunction dynamics. </p>
+                            </article>
+                        </a><a href="https://projects.mileswaugh.com/car-physics-simulator/" class="card-link"
+                            target="_blank" rel="noopener noreferrer">
+                            <article class="card">
+                                <div class="card-image-wrapper"><img src="media/car_physics_simulator_thumb.webp"
+                                        alt="Car physics simulator" /></div>
+                                <h4>2D Vehicle Dynamics Simulator</h4>
+                                <p class="meta">JavaScript · Physics Simulation</p>
+                                <p>An interactive 2D sandbox for simulating vehicle motion under realistic force models,
+                                    including acceleration, tire friction, and lateral slip, with emergent behaviors
+                                    such as skidding. </p>
+                            </article>
+                        </a><a href="https://projects.mileswaugh.com/Baryon-Simulator/" class="card-link"
+                            target="_blank" , rel="noopener noreferrer">
+                            <article class="card">
+                                <div class="card-image-wrapper"><img src="media/baryon_simulator_thumb.webp"
+                                        alt="Baryon simulator" /></div>
+                                <h4>Baryon Simulator</h4>
+                                <p class="meta">JavaScript · Physics Simulation</p>
+                                <p>A classical particle system sandbox, modeling simplified baryon interactions using
+                                    the Reid potential and attractive and repulsive electric forces, assuming aligned
+                                    spins.</p>
+                            </article>
+                        </a></div>
+                </div>
+                <div class="project-group">
+                    <h3 class="group-title">Utilities</h3>
+                    <div class="cards cards-3 compact-grid"><a
+                            href="https://projects.mileswaugh.com/chess-coordinate-trainer/" class="card-link"
+                            target="_blank" rel="noopener noreferrer">
+                            <article class="card">
+                                <div class="card-image-wrapper"><img src="media/chess_trainer.webp"
+                                        alt="Chess trainer" /></div>
+                                <h4>Chess Coordinate Trainer</h4>
+                                <p class="meta">JavaScript</p>
+                                <p>An interactive training tool for rapid chessboard coordinate recognition featuring
+                                    timed drills, immediate audiovisual feedback, and performance tracking through
+                                    streaks and response-time statistics.</p>
+                            </article>
+                        </a><a href="https://projects.mileswaugh.com/text-editor/" class="card-link" target="_blank"
+                            rel="noopener noreferrer">
+                            <article class="card">
+                                <div class="card-image-wrapper"><img src="media/text_editor.webp"
+                                        alt="Text editor preview" /></div>
+                                <h4>Text Editor</h4>
+                                <p class="meta">JavaScript</p>
+                                <p>A minimal, distraction-free text editor with a clean monospace interface, offering
+                                    real-time document statistics, import/export functionality, theming, and custom
+                                    markdown-like syntax highlighting. </p>
+                            </article>
+                        </a><a href="https://projects.mileswaugh.com/password-generator/" class="card-link"
+                            target="_blank" rel="noopener noreferrer">
+                            <article class="card">
+                                <div class="card-image-wrapper"><img src="media/password_generator.webp"
+                                        alt="Password generator" /></div>
+                                <h4>Password Generator</h4>
+                                <p class="meta">JavaScript</p>
+                                <p>A lightweight password generator that produces high-entropy, human-typeable passwords
+                                    with structured randomness, balancing usability and security.</p>
+                            </article>
+                        </a></div>
+                </div>
+        </section>
+        <section class="section" id="writing">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">Writing</p>
+                    <h2>Blog 📝</h2>
+                </div>
+                <div class="cards cards-3"><a href="https://blog.mileswaugh.com/posts/infinite_tetration/"
+                        class="card-link" target="_blank" rel="noopener noreferrer">
+                        <article class="card">
+                            <div class="card-image-wrapper"><img src="media/infinite_tetration.webp"
+                                    alt="Blog preview" /></div>
+                            <h3>Efficiently Computing Infinite Tetration</h3>
+                            <p>I analyze the infinite tetration (or "power tower") and derive efficient methods for
+                                computing it. </p>
+                        </article>
+                    </a><a href="https://blog.mileswaugh.com/posts/complex_fractals_desmos/" class="card-link"
+                        target="_blank" rel="noopener noreferrer">
+                        <article class="card">
+                            <div class="card-image-wrapper"><img src="media/newton_fractal.webp" alt="Blog preview" />
+                            </div>
+                            <h3>Complex Fractals in Desmos</h3>
+                            <p>I introduce Newton's Method, Newton fractals, and the Desmos' "complex mode". </p>
+                        </article>
+                    </a></div>
+            </div>
+        </section>
+        <section class="section" id="visuals">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">GLSL Fragment Shaders</p>
+                    <h2>Computational Visualizations</h2>
+                </div>
+                <div class="cards cards-3"><a href="https://www.shadertoy.com/view/4ffcWX" class="card-link"
+                        target="_blank" rel="noopener noreferrer">
+                        <article class="card feature-card">
+                            <div class="card-image-wrapper"><img src="media/spectral_glass_ball.webp"
+                                    alt="Path tracer render" /></div>
+                            <h3>Spectral Thin-Film Path Tracer</h3>
+                            <p>A real-time interactive Monte Carlo spectral path tracer rendering thin-film interference
+                                on a reflective glass sphere, featuring rapid sample convergence, ACEScg color
+                                management, and a custom lift/gamma/gain-inspired grading pipeline. </p>
+                        </article>
+                    </a><a href="https://www.shadertoy.com/view/WftSDX" class="card-link" target="_blank"
+                        rel="noopener noreferrer">
+                        <article class="card feature-card">
+                            <div class="card-image-wrapper"><img src="media/3d_orbital.webp" alt="Atomic orbitals" />
+                            </div>
+                            <h3>Orbital Volumetric Renderer</h3>
+                            <p>A real-time volumetric path tracer visualizing atomic orbital probability densities as
+                                participating media, with absorption and scattering behavior modulated by the
+                                wavefunction’s phase.</p>
+                        </article>
+                    </a><a href="https://www.shadertoy.com/view/ffs3zr" class="card-link" target="_blank"
+                        rel="noopener noreferrer">
+                        <article class="card feature-card">
+                            <div class="card-image-wrapper"><img src="media/polarized_orbital.webp"
+                                    alt=" visualization" /></div>
+                            <h3>Stark-Shift Orbital Visualizer</h3>
+                            <p>An interactive 2D visualization of a hydrogen 1s orbital under a uniform external
+                                electric field, computed via time-independent nondegenerate perturbation theory and
+                                rendered with density gradients and contour lines.</p>
+                        </article>
+                    </a><a href="https://www.shadertoy.com/view/7tlGz7" class="card-link" target="_blank"
+                        rel="noopener noreferrer">
+                        <article class="card feature-card">
+                            <div class="card-image-wrapper"><img src="media/landscape.webp"
+                                    alt="Wavefunction visualization" /></div>
+                            <h3>Procedural Island Renderer</h3>
+                            <p>A real-time landscape renderer procedurally generating island terrains, featuring
+                                reflective and refractive water, dynamic wave motion, and atmospheric scattering
+                                effects.</p>
+                        </article>
+                    </a><a href="https://www.shadertoy.com/view/tccXDN" class="card-link" target="_blank"
+                        rel="noopener noreferrer">
+                        <article class="card feature-card">
+                            <div class="card-image-wrapper"><img src="media/hydrogen_orbitals_layout_2.webp"
+                                    alt="Wavefunction visualization" /></div>
+                            <h3>Hydrogen Orbital Atlas</h3>
+                            <p>A real-time visualization presenting a grid of 2D slices of the hydrogen wavefunctions,
+                                designed for intuitive exploration and educational presentation of orbital structure.
+                            </p>
+                        </article>
+                    </a><a href="https://www.shadertoy.com/view/Nl2XRW" class="card-link" target="_blank"
+                        rel="noopener noreferrer">
+                        <article class="card feature-card">
+                            <div class="card-image-wrapper"><img src="media/shaded_mandelbrot.webp"
+                                    alt="Wavefunction visualization" /></div>
+                            <h3>Mandelbrot Surface Renderer</h3>
+                            <p>A real-time Mandelbrot set visualization with interactive lighting control, producing a
+                                shaded, quasi-3D appearance.</p>
+                        </article>
+                    </a></div>
+            </div>
+            </div>
+            </div>
+            <section class="section" id="links">
+                <div class="container">
+                    <div class="section-heading">
+                        <p class="section-label">Find Me On</p>
+                        <h2>Links 🔗</h2>
+                    </div>
+                    <div class="cards cards-3"><a class="link-card link-card-horizontal"
+                            href="https://github.com/piano-miles" target="_blank" rel="noopener noreferrer"><img
+                                src="icons/github.svg" alt="GitHub logo" class="link-icon" loading="lazy" />
+                            <div><strong>GitHub</strong><span>Code, simulations, and research</span></div>
+                        </a><a class="link-card link-card-horizontal" href="https://www.linkedin.com/in/miles-waugh/"
+                            target="_blank" rel="noopener noreferrer"><img src="icons/linkedin.svg" alt="LinkedIn logo"
+                                class="link-icon" loading="lazy" />
+                            <div><strong>LinkedIn</strong><span>Professional background</span></div>
+                        </a><a class="link-card link-card-horizontal" href="https://www.youtube.com/@mileswaugh"
+                            target="_blank" rel="noopener noreferrer"><img src="icons/youtube.svg" alt="YouTube logo"
+                                class="link-icon" loading="lazy" />
+                            <div><strong>YouTube</strong><span>Math and science videos</span></div>
+                        </a><a class="link-card link-card-horizontal" href="https://mileswaugh.artstation.com/"
+                            target="_blank" rel="noopener noreferrer"><img src="icons/artstation.svg"
+                                alt="ArtStation logo" class="link-icon" loading="lazy" />
+                            <div><strong>ArtStation</strong><span>Visual and creative work</span></div>
+                        </a><a class="link-card link-card-horizontal" href="https://www.shadertoy.com/" target="_blank"
+                            rel="noopener noreferrer"><img src="icons/webgl.svg" alt="Shadertoy logo" class="link-icon"
+                                loading="lazy" />
+                            <div><strong>Shadertoy</strong><span>GLSL shaders and experiments</span></div>
+                        </a><a class="link-card link-card-horizontal" href="https://scratch.mit.edu/users/piano_miles/"
+                            target="_blank" rel="noopener noreferrer"><img src="icons/scratch.svg" alt="Scratch logo"
+                                class="link-icon" loading="lazy" />
+                            <div><strong>Scratch</strong><span>Early projects</span></div>
+                        </a></div>
+                </div>
+            </section>
+            <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+                <div class="container">
+                    <div class="section-heading">
+                        <p class="section-label">Contact</p>
+                        <h2 id="contact-heading">Let’s Build Something Interesting</h2>
+                    </div>
+                    <div class="contact-box">
+                        <p>I’m interested in graduate study at the intersection of physics and machine learning, with an
+                            emphasis on pushing beyond standard simulation limits toward methods that enable new regimes
+                            of scale, efficiency, and insight. I’m especially motivated by work that treats machine
+                            learning as a tool for scientific discovery and connects computation with clear,
+                            interpretable representations of complex systems, and I’m always open to research
+                            collaborations and ML-related internships. </p>
+                        <div class="contact-links"><a href="mailto:contact@mileswaugh.com">contact@mileswaugh.com</a><a
+                                href="https://www.linkedin.com/in/miles-waugh/" target="_blank"
+                                rel="noopener noreferrer">LinkedIn</a><a href="media/resume.pdf" target="_blank"
+                                rel="noopener noreferrer">View Resume</a></div>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Miles Waugh. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Miles Waugh",
+            "url": "https://www.mileswaugh.com",
+            "sameAs": ["https://github.com/piano-miles", "https://www.linkedin.com/in/miles-waugh/"],
+            "jobTitle": "Computational Physics Researcher"
+        }
+    </script>
+</body>
+
+</html>
