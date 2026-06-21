@@ -1,0 +1,132 @@
+[
+    {
+        "title": "Home",
+        "url": "https://www.mileswaugh.com/",
+        "domain": "main",
+        "show_in_404": true,
+        "changefreq": "weekly",
+        "priority": 1.0
+    },
+
+    {
+        "title": "Blog Home",
+        "url": "https://blog.mileswaugh.com/",
+        "domain": "blog",
+        "show_in_404": true
+    },
+    {
+        "title": "Efficiently Computing Infinite Tetration",
+        "url": "https://blog.mileswaugh.com/posts/infinite_tetration/",
+        "domain": "blog",
+        "show_in_404": false
+    },
+    {
+        "title": "Complex Fractals in Desmos",
+        "url": "https://blog.mileswaugh.com/posts/complex_fractals_desmos/",
+        "domain": "blog",
+        "show_in_404": false
+    },
+    {
+        "title": "Welcome",
+        "url": "https://blog.mileswaugh.com/posts/welcome/",
+        "domain": "blog",
+        "show_in_404": false
+    },
+    {
+        "title": "Development",
+        "url": "https://blog.mileswaugh.com/development/",
+        "domain": "blog",
+        "show_in_404": false
+    },
+    {
+        "title": "Tags",
+        "url": "https://blog.mileswaugh.com/tags/",
+        "domain": "blog",
+        "show_in_404": false
+    },
+    {
+        "title": "Tag: General",
+        "url": "https://blog.mileswaugh.com/tags/general/",
+        "domain": "blog",
+        "show_in_404": false
+    },
+    {
+        "title": "Tag: Long",
+        "url": "https://blog.mileswaugh.com/tags/long/",
+        "domain": "blog",
+        "show_in_404": false
+    },
+    {
+        "title": "Tag: Math",
+        "url": "https://blog.mileswaugh.com/tags/math/",
+        "domain": "blog",
+        "show_in_404": false
+    },
+    {
+        "title": "Tag: Numerical Analysis",
+        "url": "https://blog.mileswaugh.com/tags/numerical-analysis/",
+        "domain": "blog",
+        "show_in_404": false
+    },
+    {
+        "title": "Tag: Short",
+        "url": "https://blog.mileswaugh.com/tags/short/",
+        "domain": "blog",
+        "show_in_404": false
+    },
+
+    {
+        "title": "Projects Home",
+        "url": "https://projects.mileswaugh.com/",
+        "domain": "projects",
+        "show_in_404": true
+    },
+    {
+        "title": "2D Caustics",
+        "url": "https://projects.mileswaugh.com/2D-Caustics/",
+        "domain": "projects",
+        "show_in_404": false
+    },
+    {
+        "title": "Baryon Simulator",
+        "url": "https://projects.mileswaugh.com/Baryon-Simulator/",
+        "domain": "projects",
+        "show_in_404": false
+    },
+    {
+        "title": "2D Vehicle Dynamics Simulator",
+        "url": "https://projects.mileswaugh.com/car-physics-simulator/",
+        "domain": "projects",
+        "show_in_404": false
+    },
+    {
+        "title": "Chess Coordinate Trainer",
+        "url": "https://projects.mileswaugh.com/chess-coordinate-trainer/",
+        "domain": "projects",
+        "show_in_404": false
+    },
+    {
+        "title": "Password Generator",
+        "url": "https://projects.mileswaugh.com/password-generator/",
+        "domain": "projects",
+        "show_in_404": false
+    },
+    {
+        "title": "Terminize",
+        "url": "https://projects.mileswaugh.com/terminize/",
+        "domain": "projects",
+        "show_in_404": false
+    },
+    {
+        "title": "Text Editor",
+        "url": "https://projects.mileswaugh.com/text-editor/",
+        "domain": "projects",
+        "show_in_404": false
+    },
+    {
+        "title": "Wavefunction Simulator",
+        "url": "https://projects.mileswaugh.com/Wavefunction-Simulator/",
+        "domain": "projects",
+        "show_in_404": false
+    }
+]

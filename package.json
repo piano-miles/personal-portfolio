@@ -1,0 +1,11 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "Source for www.mileswaugh.com",
+  "private": true,
+  "scripts": {
+    "generate": "node generate-site-data.js"
+  },
+  "author": "Miles Waugh",
+  "license": "UNLICENSED"
+}

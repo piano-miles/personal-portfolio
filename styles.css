@@ -285,7 +285,7 @@ a {
     flex-wrap: wrap
 }
 
-.contact-links a:hover {
+.contact-links a:hover, .not-found-links a:hover {
     color: var(--primary)
 }
 
@@ -548,7 +548,7 @@ a:focus-visible, button:focus-visible {
     border-color: var(--border)
 }
 
-.contact-links a {
+.contact-links a, .not-found-links a {
     color: var(--text-soft);
     transition: color .2s ease
 }
@@ -563,4 +563,60 @@ main #visuals #links .container .cards {
 
 #links {
     grid-template-rows: 11fr 20fr
+}
+
+.not-found-hero {
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    text-align: center
+}
+
+.not-found-hero h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin: .5rem 0 1rem;
+    letter-spacing: -.04em
+}
+
+.not-found-hero .hero-copy {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.not-found-hero .hero-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem
+}
+
+.not-found-links-section {
+    padding-top: 0
+}
+
+.not-found-groups {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem
+}
+
+.not-found-group h3 {
+    font-size: .85rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--muted);
+    margin: 0 0 .9rem
+}
+
+.not-found-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .65rem
+}
+
+@media (max-width:720px) {
+    .not-found-groups {
+        grid-template-columns: 1fr
+    }
 }
