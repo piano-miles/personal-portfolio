@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -13,19 +13,55 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+
+    <style>
+        html.checking body>* {
+            visibility: hidden;
+        }
+
+        html.checking #redirect-check {
+            visibility: visible;
+        }
+
+        #redirect-check {
+            position: fixed;
+            inset: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-family: "Inter", system-ui, sans-serif;
+            color: #888;
+            font-size: 0.95rem;
+        }
+
+        html.checking #redirect-check {
+            display: flex;
+        }
+    </style>
+    <script>
+        document.documentElement.className += " checking";
+    </script>
 </head>
 
 <body class="lights-on">
+    <div id="redirect-check" aria-hidden="true">Checking…</div>
+
     <header class="site-header" id="top">
-        <div class="container nav-wrap"><a href="/" class="logo">Miles Waugh</a></div>
+        <div class="container nav-wrap">
+            <a href="/" class="logo">Miles Waugh</a>
+        </div>
     </header>
     <main>
         <section class="section not-found-hero">
             <div class="container">
                 <p class="section-label">Error 404</p>
                 <h1>Page Not Found</h1>
-                <p class="hero-copy">The page you're looking for doesn't exist or may have moved.</p>
-                <div class="hero-actions"><a href="/" class="btn btn-primary">Back to Home</a></div>
+                <p class="hero-copy">
+                    The page you're looking for doesn't exist or may have moved.
+                </p>
+                <div class="hero-actions">
+                    <a href="/" class="btn btn-primary">Back to Home</a>
+                </div>
             </div>
         </section>
         <section class="section not-found-links-section">
@@ -35,19 +71,25 @@
                     <div class="not-found-group">
                         <h3>Main Site</h3>
                         <ul class="not-found-links">
-                            <li><a href="https://www.mileswaugh.com/">Home</a></li>
+                            <li>
+                                <a href="https://www.mileswaugh.com/">Home</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="not-found-group">
                         <h3>Blog</h3>
                         <ul class="not-found-links">
-                            <li><a href="https://blog.mileswaugh.com/">Blog Home</a></li>
+                            <li>
+                                <a href="https://blog.mileswaugh.com/">Blog Home</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="not-found-group">
                         <h3>Projects</h3>
                         <ul class="not-found-links">
-                            <li><a href="https://projects.mileswaugh.com/">Projects Home</a></li>
+                            <li>
+                                <a href="https://projects.mileswaugh.com/">Projects Home</a>
+                            </li>
                         </ul>
                     </div>
                     <!-- SITE-LINKS-END -->
@@ -60,6 +102,39 @@
             <p>© 2026 Miles Waugh. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        !(function () {
+            var e = document.documentElement;
+
+            function t() {
+                e.className = e.className.replace(/\bchecking\b/, "").trim();
+            }
+            var o =
+                window.location.pathname +
+                window.location.search +
+                window.location.hash;
+            if (
+                "/" === o ||
+                "" === o ||
+                /^\/404(\.html)?$/.test(window.location.pathname)
+            )
+                t();
+            else {
+                var c = "https://projects.mileswaugh.com" + o,
+                    n = setTimeout(t, 4e3);
+                fetch(c, {
+                    method: "HEAD",
+                })
+                    .then(function (e) {
+                        (clearTimeout(n), e.ok ? window.location.replace(c) : t());
+                    })
+                    .catch(function () {
+                        (clearTimeout(n), t());
+                    });
+            }
+        })();
+    </script>
 </body>
 
 </html>
