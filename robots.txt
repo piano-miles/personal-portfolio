@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /notes/
+
+User-agent: Googlebot
+Allow: /notes/
+
+User-agent: Google-Extended
+Disallow: /notes/
+
+User-agent: Applebot-Extended
+Disallow: /notes/
+
+Sitemap: https://www.mileswaugh.com/sitemap.xml
